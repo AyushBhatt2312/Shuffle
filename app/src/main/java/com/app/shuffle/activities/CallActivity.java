@@ -58,7 +58,7 @@ public class CallActivity extends AppCompatActivity {
         firebaseRef = FirebaseDatabase.getInstance().getReference().child("users");
 
         username = getIntent().getStringExtra("username");
-        String incoming = getIntent().getStringExtra("incoming");
+        String incoming =  getIntent().getStringExtra("incoming");
         createdBy = getIntent().getStringExtra("createdBy");
 
 //        friendsUsername = "";

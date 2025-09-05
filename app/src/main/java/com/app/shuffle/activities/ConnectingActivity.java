@@ -43,7 +43,8 @@ public class ConnectingActivity extends AppCompatActivity {
                 .load(profile)
                 .into(binding.profile);
 
-        String username = auth.getUid();
+        String username;
+        username = auth.getUid();
 
         database.getReference().child("users")
                 .orderByChild("status")
